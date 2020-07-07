@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Price</title>
+</head>
+<body>
+<h2>Flight Price Estimation</h2>
+<form action="/predict" method="POST">
+    <table>
+    <tr>
+        <td>Airline :</td>
+        <td><select for="airline" name="Airline">
+            <option value="0">Air Asia</option>
+            <option value="1">Air India</option>
+            <option value="2">GoAir</option>
+            <option value="3">Indigo</option>
+            <option value="4">Jet Airways</option>
+            <option value="5">Jet Airways Business</option>
+            <option value="6">Multiple carriers</option>
+            <option value="7">Multiple carriers Premium economy</option>
+            <option value="8">SpiceJet</option>
+            <option value="9">Trujet</option>
+            <option value="10">Vistara</option>
+            <option value="11">Vistara Premium economy</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Source :</td>
+        <td>
+            <select id="Source" name="Source">
+        <option value="0">Banglore</option>
+        <option value="1">Chennai</option>
+        <option value="2">Delhi</option>
+        <option value="3">Kolkata</option>
+        <option value="4">Mumbai</option>
+    </select><br>
+        </td>
+    </tr>
+    <tr>
+        <td>Destination :</td>
+        <td>
+            <select id="Destin" name="Destin">
+        <option value="0">Banglore</option>
+        <option value="1">Cochin</option>
+        <option value="2">Delhi</option>
+        <option value="3">Hyderabad</option>
+        <option value="4">Kolkata</option>
+        <option value="5">New Delhi</option>
+    </select><br>
+        </td>
+    </tr>
+    <tr>
+        <td>Total stops :</td>
+        <td><input type="number" name="Total_stop" id="Total_stop"></td>
+    </tr>
+    <tr>
+        <td>Extra facility :</td>
+        <td><select id="extra facility" name="extra facility">
+        <option value="0">1 Long layover</option>
+        <option value="1">1 Short layover</option>
+        <option value="2">2 Long layover</option>
+        <option value="3">Business class</option>
+        <option value="4">Change airports</option>
+        <option value="5">In-flight meal not included</option>
+        <option value="6">No Info</option>
+        <option value="7">No check-in baggage included</option>
+        <option value="8">Red-eye flight</option>
+    </select><br></td>
+    </tr>
+     <tr>
+         <td>Duration :</td>
+         <td><input type="number" id="Duration" name="Duration" maxlength="4"></td>
+     </tr>
+     <tr>
+         <td>Date of Journey :</td>
+         <td><input type="date" name="doj" id="doj"></td>
+     </tr>
+     <tr>
+         <td>Departure Hr :</td>
+         <td><input type="number" name="Departure_hr" id="Departure_hr" placeholder="Departure_hr"></td>
+     </tr>
+      <tr>
+         <td>Departure min :</td>
+         <td><input type="number" name="Departure_min" id="Departure_min" placeholder="Departure_min"></td>
+     </tr>
+     <tr>
+         <td>Arrival Hr :</td>
+         <td><input type="number" name="Arrival_hr" id="Arival_hr" placeholder="Arival_hr"></td>
+     </tr><tr>
+
+         <td>Arrival Min :</td>
+         <td><input type="number" name="Arrival_min" id="Arival_min" placeholder="Arival_min"></td>
+     </tr>
+     <tr>
+         <td>
+             <input type="submit" name="Submit" id="submit" align="center" style="width: 70px; margin: 10px">
+         </td>
+     </tr>
+
+</table>
+</form>
+
+</body>
+<style type="text/css">
+    form { background-color : lightblue ;
+           text-align:center;
+           margin:25px 20px 6px 50px;
+           width:30%;
+           display: inline-block;
+    }
+    input { width : 67%;
+            height : 20px;
+    }
+    option { width : 30%;
+    }
+    select {
+    width: 70%;
+    padding-right: 20px;
+    border: black;
+    border-radius: 4px;
+    }
+    td { border: black;
+         color: green;
+    }
+    h2{ background-color : lightblue ;
+           text-align:center;
+           color : blue;
+           margin:10px 456px 0px 485px;
+    }
+    body { text-align:center;
+           background-color :  #CD853F;
+    }
+</style>
+</html>
